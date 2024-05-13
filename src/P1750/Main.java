@@ -15,41 +15,6 @@ public class Main {
     }
 
     public static long mergeSort(int[] arr, int l, int r) {//返回逆序对数量从l-r
-//        int count = 0;
-//        for (int i = 0; i <n ; i++) {
-//           count +=Math.abs(map.get(arr[i])-i);
-//        }
-//        return count;
-//        int[] count = new int[n];
-//        int max = 0;
-//        for (int i = 1; i < n; i++) {
-//            max = Math.max(max, count[i - 1]);
-//            for (int j = i - 1; j >= 0; j--) {
-//                if (arr[i] < arr[j]) {
-//                    count[i] += 1;
-//                }
-//            }
-//            count[i] += count[i - 1];
-//        }
-//        return count[n - 1];
-//        int max = 0;
-//        int l = 0;
-//        int r = 0;
-//        for (int i = 1; i <= n; i++) {
-//            r+=i;
-//            while(l<n&&r<n)
-//            {
-//                if(arr[l] > arr[r])
-//                {
-//                    max++;
-//                }
-//                r+=1;
-//                l+=1;
-//            }
-//            r = 0;
-//            l = 0;
-//        }
-//        return max;
         if (l >= r)
             return 0;
         int mid = (r - l) / 2 + l;
